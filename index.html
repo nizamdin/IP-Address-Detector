@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="IP Address Detector  - Frontend Mentor">
+  <meta name="keywords" content="IP Address Detector  , Frontend Mentor">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images//favicon.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Map API -->
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <title>IP Address Detector  </title>
+</head>
+
+<body>
+  <main class="main-container">
+    <!-- Header Section -->
+    <section class="header-section">
+      <h1>IP Address Detector      </h1>
+      <!-- Search Form -->
+      <form method="get" class="search-form">
+        <input type="text" placeholder="Search for any IP address" required class="input-field">
+
+        <button type="submit" class="submit-btn">
+        Search
+        </button>
+
+      </form>
+    </section>
+    <!-- Data Section -->
+    <section class="data-section">
+
+      <!-- IP Address -->
+      <article>
+        <h2>IP Address</h2>
+        <p class="ipAddressField"></p>
+      </article>
+      <hr>
+      <!-- continent_name-->
+      <article>
+        <h2>Continent Name</h2>
+        <p class="continent_name"></p>
+      </article>
+    <hr>
+      <!-- Country -->
+      <article>
+        <h2>Country Name</h2>
+        <p class="locationInput"></p>
+      </article>
+      <hr>
+              <!-- country_capital-->
+              <article>
+                <h2>Country Capital</h2>
+                <p class="country_capital"></p>
+              </article>
+            <hr>
+      <!-- State-->
+      <article>
+        <h2>State</h2>
+        <p class="state_prov"></p>
+      </article>
+    <hr>
+      <!--cityLocation -->
+      <article>
+        <h2>City Name</h2>
+        <p class="cityLocation"></p>
+      </article>
+      <hr>
+
+        <!-- zip code-->
+        <article>
+          <h2>Postal Code</h2>
+          <p class="postalCode"></p>
+        </article>
+      <hr>
+      <!-- Timezone -->
+      <article>
+        <h2>Timezone</h2>
+        <p class="timezoneInput"></p>
+      </article>
+      <hr>
+      <!-- ISP-->
+      <article>
+        <h2>ISP</h2>
+        <p class="ispInput"></p>
+      </article>
+    
+    </section>
+    <!-- Map -->
+    <section class="map-section">
+
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <!-- Map API -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='module' src='key.js'></script>
+  <script type='module' src="app.js"></script>
+
+</body>
+
+</html>
